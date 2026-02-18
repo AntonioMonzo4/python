@@ -1,0 +1,18 @@
+Python es un lenguaje de programación de código abierto.
+
+-Es un lenguaje interpretado 
+-Es de alto nivel (es decir más cercano al humano)
+-Se puede utilizar para desarrollo web, machine learning, ciencia de datos... es un lenguaje de proposito general 
+-Es mutiparadigma(funcional,imperativa...)
+-Es multiplataforma 
+-Tiene su propia biblioteca estandar y es bastante amplia apesar de los módulos 
+-El nombre es un guiño a Monty Python
+
+Guido van Rossum --> CREADOR 
+
+Descargar en la web (python.org) si no existen editores online 
+
+Pycharm --> editor de pago
+VsCode --> editor gratis 
+
+nombres_en_minus_y_guion
