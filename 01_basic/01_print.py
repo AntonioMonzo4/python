@@ -12,6 +12,9 @@ print("Hola" + " " + "Mundo" + "!!") # Imprime el mensaje "Hola Mundo!!"
 #Se puede usar un separador personalizado al imprimir varios valores
 print("Hola", "Mundo", "!!", sep="-") # Imprime los valores "Hola", "Mundo" y "!!" separados por guiones en la consola
 
+#Puedes usar el parámetro end para cambiar el carácter de finalización de la impresión
+print("Hola Mundo", end="!!!\n") # Imprime el mensaje "Hola Mundo" seguido de "!!!" y un salto de línea en la consola
+
 #Puedes usar el formato de cadena para imprimir variables
 nombre = "Antonio"
 edad = 25
