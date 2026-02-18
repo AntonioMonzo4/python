@@ -16,3 +16,6 @@ Pycharm --> editor de pago
 VsCode --> editor gratis 
 
 nombres_en_minus_y_guion
+
+Para ejecutar los archivos los podemos hacer desde la terminal con rl comando python3 nombrearchivo.py (apuntar)
+Tambien podemos ejecutar con vscode
