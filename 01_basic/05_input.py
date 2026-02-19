@@ -12,3 +12,8 @@ edad = input("¿Cuántos años tienes? ")  # Solicita la edad del usuario
 edad = int(edad)  # Convierte la entrada de texto a un número entero
 print(f"En 5 años, tendrás {edad + 5} años.")  # Imprime la edad del usuario en 5 años
 
+#En el mismoo input puedes pedir distintas cosas, por ejemplo el nombre y la edad al mismo tiempo, y luego separar esa información utilizando el método split()
+datos = input("Ingresa tu nombre y edad separados por un espacio: ")  # Solicita al usuario que ingrese su nombre y edad separados por un espacio
+nombre, edad = datos.split()  # Separa la entrada en dos partes: nombre y edad
+edad = int(edad)  # Convierte la edad de texto a un número entero
+print(f"Hola, {nombre}. Tienes {edad} años.")  # Imprime un saludo personalizado con el nombre y la edad del usuario
