@@ -2,7 +2,7 @@
 # Ejercicios para practicar los conceptos aprendidos en las lecciones.
 ###
 
-from os import system
+from os import system # Esto es para limpiar la consola antes de ejecutar los ejercicios, dependiendo del sistema operativo que estés usando (Linux/MacOS o Windows).
 if system("clear") != 0: system("cls")
 
 print("\nEjercicio 1: Imprimir mensajes")
