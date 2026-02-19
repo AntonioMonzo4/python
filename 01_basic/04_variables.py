@@ -62,6 +62,7 @@ print(f"Mi nombre es {nombre} y tengo {edad} años.")  # Imprime "Mi nombre es A
 #if = True  # No se puede usar 'if' como nombre de variable porque
 #Es importante evitar el uso de palabras reservadas para nombrar variables, ya que esto puede causar errores en el código.
 
-#Tambien puedes trucar el tipo de una variable 
+#Tambien puedes trucar el tipo de una variable(anotación de tipo) para indicar el tipo de dato que se espera que tenga una variable, aunque esto no es obligatorio en Python.
 is_user_logged: bool = True
 print(is_user_logged)  # Imprime True
+#Pero tienes que pner el typechecker para que te avise de los errores de tipo
