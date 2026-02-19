@@ -31,3 +31,26 @@ variable2 = 3.14
 #2variable = 5  # No puede comenzar con un número
 #mi variable = "Hola"  # No puede contener espacios
 #mi-variable = "Hola"  # No puede contener guiones
+
+
+#Es tipado dinámico, lo que significa que el tipo de dato de una variable puede cambiar durante la ejecución del programa.
+#Ejemplo de tipado dinámico
+mi_variable = 10  # mi_variable es un entero
+print(mi_variable)  # Imprime 10
+mi_variable = "Ahora soy una cadena"  # mi_variable ahora es una cadena de texto
+print(mi_variable)  # Imprime "Ahora soy una cadena"
+#En resumen, las variables son fundamentales en la programación, ya que nos permiten almacenar y manipular datos de manera eficiente.
+
+#Es de tipado fuerte, lo que significa que el tipo de dato de una variable no puede cambiar automáticamente a otro tipo sin una conversión explícita.
+#Ejemplo de tipado fuerte
+mi_variable = 10  # mi_variable es un entero
+print(mi_variable)  # Imprime 10
+#Intentar asignar un valor de tipo diferente sin conversión explícita generará un error
+#mi_variable = "Ahora soy una cadena"  # Esto generará un error porque no se puede asignar una cadena a una variable que anteriormente era un entero
+#Para cambiar el tipo de dato de una variable, es necesario realizar una conversión explícita
+mi_variable = str(mi_variable)  # Convertimos el entero a una cadena
+print(mi_variable)  # Imprime "10" como una cadena de texto
+#Podemos usar f-strings para mostrar el valor de una variable junto con texto
+nombre = "Alice"
+edad = 30
+print(f"Mi nombre es {nombre} y tengo {edad} años.")  # Imprime "Mi nombre es Alice y tengo 30 años."
