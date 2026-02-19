@@ -54,3 +54,14 @@ print(mi_variable)  # Imprime "10" como una cadena de texto
 nombre = "Alice"
 edad = 30
 print(f"Mi nombre es {nombre} y tengo {edad} años.")  # Imprime "Mi nombre es Alice y tengo 30 años."
+
+#Palabras reservadas son palabras que tienen un significado especial en Python y no pueden ser utilizadas como nombres de variables.
+#Ejemplo de palabras reservadas
+#def = 5  # No se puede usar 'def' como nombre de variable porque
+#class = "Hola"  # No se puede usar 'class' como nombre de variable porque
+#if = True  # No se puede usar 'if' como nombre de variable porque
+#Es importante evitar el uso de palabras reservadas para nombrar variables, ya que esto puede causar errores en el código.
+
+#Tambien puedes trucar el tipo de una variable 
+is_user_logged: bool = True
+print(is_user_logged)  # Imprime True
