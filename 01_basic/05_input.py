@@ -17,3 +17,9 @@ datos = input("Ingresa tu nombre y edad separados por un espacio: ")  # Solicita
 nombre, edad = datos.split()  # Separa la entrada en dos partes: nombre y edad
 edad = int(edad)  # Convierte la edad de texto a un número entero
 print(f"Hola, {nombre}. Tienes {edad} años.")  # Imprime un saludo personalizado con el nombre y la edad del usuario
+#También puedes usar el método split() para separar la entrada en una lista de palabras, lo que es útil si el usuario ingresa más de dos datos.
+datos = input("Ingresa tu nombre, edad y ciudad separados por espacios: ")  # Solicita al usuario que ingrese su nombre, edad y ciudad separados por espacios
+nombre, edad, ciudad = datos.split()  # Separa la entrada en tres partes: nombre, edad y ciudad
+edad = int(edad)  # Convierte la edad de texto a un número entero
+print(f"Hola, {nombre}. Tienes {edad} años y vives en {ciudad}.")  # Imprime un saludo personalizado con el nombre, edad y ciudad del usuario   
+#En resumen, la función input() es una herramienta fundamental para interactuar con el usuario en Python, permitiéndonos obtener información de manera dinámica durante la ejecución del programa.
