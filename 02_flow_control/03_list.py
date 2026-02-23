@@ -36,3 +36,12 @@ print(matriz[1][2])  # Imprime 6 (elemento en la segunda fila, tercera columna)
 print(frutas[0:2])  # Imprime ["manzana", "pera"]
 print(numeros[1:5:2])  # Imprime [2, 4]
 
+#Funciones útiles para listas
+#len(): Devuelve la longitud de la lista.
+print(len(frutas))  # Imprime 4
+#sum(): Devuelve la suma de los elementos de una lista (solo para listas numéricas).
+print(sum(numeros))  # Imprime 21
+#max(): Devuelve el valor máximo de una lista (solo para listas numéricas).
+print(max(numeros))  # Imprime 6
+#min(): Devuelve el valor mínimo de una lista (solo para listas numéricas).
+print(min(numeros))  # Imprime 1
