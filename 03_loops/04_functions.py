@@ -39,3 +39,12 @@ def saludar(nombre="mundo", saludo="Hola"):
 saludar()  # Imprime "Hola, mundo!"
 saludar("Alice")  # Imprime "Hola, Alice!"
 saludar(saludo="¡Bienvenido!", nombre="Bob")  # Imprime "¡Bienvenido!, Bob!"
+
+
+#Argumentos de longitud variable con *args y **kwargs
+def funcion_con_args(*args):
+    print("Argumentos posicionales:", args)
+def funcion_con_kwargs(**kwargs):
+    print("Argumentos con clave:", kwargs)
+funcion_con_args(1, 2, 3)  # Imprime "Argumentos posicionales: (1, 2, 3)"
+funcion_con_kwargs(nombre="Alice", edad=30)  # Imprime "Argumentos con clave: {'nombre': 'Alice', 'edad': 30}"
