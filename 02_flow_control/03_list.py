@@ -24,6 +24,17 @@ frutas.append("uva")
 print(frutas)  # Imprime ["manzana", "pera", "naranja", "uva"]
 numeros.append(6)
 print(numeros)  # Imprime [1, 2, 3, 4, 5, 6]
+#Añadir con concatenación
+frutas = frutas + ["kiwi"]
+print(frutas)  # Imprime ["manzana", "pera", "naranja", "uva", "kiwi"]
+
+#Eliminar elementos de una lista
+#Puedes eliminar elementos de una lista utilizando el método remove() o la función del.
+frutas.remove("pera")
+print(frutas)  # Imprime ["manzana", "naranja", "uva", "kiwi"]
+del numeros[0]  # Elimina el primer elemento (1)
+print(numeros)  # Imprime [2, 3, 4, 5, 6]
+
 
 #Lista de listas
 #Puedes crear listas que contengan otras listas como elementos. Esto se conoce como listas anidadas.
