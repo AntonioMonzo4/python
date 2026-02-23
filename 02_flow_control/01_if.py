@@ -21,7 +21,7 @@ elif nota >= 60:
 else:
     print("Insuficiente")
     
-
+ 
 #OPCIONES DE OPERADORES LÓGICOS
 #AND (y): Devuelve True si ambas condiciones son verdaderas.
 #OR (o): Devuelve True si al menos una de las condiciones es verdadera.
