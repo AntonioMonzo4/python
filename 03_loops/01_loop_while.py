@@ -60,3 +60,15 @@ while contador < 5:
     contador += 1
 else:
     print("El bucle ha terminado normalmente")  # No se ejecutará si se ha usado break  
+
+#Try except en un bucle while
+while True:
+    try:
+        numero = int(input("Introduce un número entero (o 'salir' para terminar): "))
+        print("Número introducido:", numero)
+    except ValueError:
+        print("Entrada no válida. Por favor, introduce un número entero.")
+    except KeyboardInterrupt:
+        print("\nBucle interrumpido por el usuario. Saliendo...")
+        break  # Sale del bucle si se interrumpe con Ctrl+C
+
