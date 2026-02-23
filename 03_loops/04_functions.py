@@ -17,3 +17,15 @@ def saludar(nombre):
 
 #Llamar a una función
 saludar("Alice")  # Imprime "Hola, Alice!"
+
+#Docuentación de funciones con docstrings
+def multiplicar(a, b):
+    """Esta función multiplica dos números y devuelve el resultado."""
+    return a * b
+#Llamar a la función multiplicar
+resultado = multiplicar(4, 6)
+print("El resultado de la multiplicación es:", resultado)  # Imprime "El resultado de la multiplicación es: 24"
+
+#Funciones con valores predeterminados
+def saludar(nombre="mundo"):
+    print(f"Hola, {nombre}!")
