@@ -17,3 +17,6 @@ for numero in range(10, 0, -1):
 #Bucle for con range y un paso negativo para contar hacia atrás
 for numero in range(10, 0, -1):
     print("Número:", numero)
+
+#Para crear una lista a partir de un rango de números, puedes convertir el objeto range en una lista utilizando la función list().
+numeros = list(range(5))
