@@ -66,4 +66,6 @@ print("Números encontrados con findall:", numeros_con_findall)  # Imprime "Núm
 for coincidencia in re.finditer(r"\d+", texto):
     print(f"Número encontrado: {coincidencia.group()} en la posición {coincidencia.start()}-{coincidencia.end()}")  
     # Imprime "Número encontrado: 123 en la posición 27-30", "Número encontrado: 456 en la posición 31-34", "Número encontrado: 7890 en la posición 35-39"  
-    
+#Método sub para reemplazar todas las coincidencias de un patrón
+texto_reemplazado = re.sub(r"\d+", "XXX", texto)
+print("Texto después de sub:", texto_reemplazado)  # Imprime "Texto después de sub: El número de teléfono es XXX-XXX-XXXX."
