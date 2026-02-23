@@ -49,3 +49,14 @@ while contador < 5:
     contador += 1
 else:
     print("El bucle ha terminado normalmente")
+
+#Bucle while con else y break
+contador = 0
+while contador < 5:
+    print("Contador:", contador)
+    if contador == 3:
+        print("Se ha alcanzado el número 3, saliendo del bucle...")
+        break  # Sale del bucle si el contador es igual a 3
+    contador += 1
+else:
+    print("El bucle ha terminado normalmente")  # No se ejecutará si se ha usado break  
