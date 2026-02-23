@@ -56,3 +56,10 @@ else:
 frutas = ["manzana", "banana", "naranja"]
 for indice, fruta in enumerate(frutas):
     print(f"Índice: {indice}, Fruta: {fruta}")
+
+#Bucle for con zip
+nombres = ["Alice", "Bob", "Charlie"]
+edades = [25, 30, 35]
+for nombre, edad in zip(nombres, edades):
+    print(f"Nombre: {nombre}, Edad: {edad}")    
+    
