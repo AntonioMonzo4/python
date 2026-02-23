@@ -69,3 +69,25 @@ for coincidencia in re.finditer(r"\d+", texto):
 #Método sub para reemplazar todas las coincidencias de un patrón
 texto_reemplazado = re.sub(r"\d+", "XXX", texto)
 print("Texto después de sub:", texto_reemplazado)  # Imprime "Texto después de sub: El número de teléfono es XXX-XXX-XXXX."
+"""
+Patrón	Significado
+.	    Cualquier carácter excepto salto de línea
+^      	Inicio del texto
+$	    Final del texto
+*	    0 o más repeticiones
++	    1 o más repeticiones
+?	    0 o 1 repetición
+{n}	    Exactamente n repeticiones
+{n,m}	Entre n y m repeticiones
+[]	    Conjunto de caracteres
+`	    `
+()	    Agrupación
+\	    Escape
+
+\d	Dígito (0-9)
+\D	No dígito
+\w	Letra, número o _
+\W	No alfanumérico
+\s	Espacio en blanco
+\S	No espacio
+"""
