@@ -41,7 +41,7 @@ for numero in range(5):
     print("Número:", numero)
 else:
     print("El bucle ha terminado normalmente")
-    
+
 #Bucle for con else y break
 for numero in range(5):
     print("Número:", numero)
@@ -50,3 +50,9 @@ for numero in range(5):
         break  # Sale del bucle si el número es igual a 3
 else:
     print("El bucle ha terminado normalmente")
+
+
+#Bucle for con enumerate
+frutas = ["manzana", "banana", "naranja"]
+for indice, fruta in enumerate(frutas):
+    print(f"Índice: {indice}, Fruta: {fruta}")
