@@ -42,4 +42,10 @@ while contador < 10:
         continue  # Salta el resto del código en esta iteración si el número es par
     print("Número impar:", contador)
 
-    
+#Bucle while con else 
+contador = 0
+while contador < 5:
+    print("Contador:", contador)
+    contador += 1
+else:
+    print("El bucle ha terminado normalmente")
