@@ -62,3 +62,8 @@ print("Partes del texto con split:", partes_con_split)  # Imprime "Partes del te
 #Método findall para encontrar todas las coincidencias de un patrón
 numeros_con_findall = re.findall(r"\d+", texto)
 print("Números encontrados con findall:", numeros_con_findall)  # Imprime "Números encontrados con findall: ['123', '456', '7890']"
+#Método iter para encontrar todas las coincidencias de un patrón con información de posición
+for coincidencia in re.finditer(r"\d+", texto):
+    print(f"Número encontrado: {coincidencia.group()} en la posición {coincidencia.start()}-{coincidencia.end()}")  
+    # Imprime "Número encontrado: 123 en la posición 27-30", "Número encontrado: 456 en la posición 31-34", "Número encontrado: 7890 en la posición 35-39"  
+    
