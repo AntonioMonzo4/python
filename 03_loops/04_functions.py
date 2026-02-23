@@ -32,3 +32,10 @@ help(multiplicar)  # Muestra la documentación de la función multiplicar
 #Funciones con valores predeterminados
 def saludar(nombre="mundo"):
     print(f"Hola, {nombre}!")
+
+#Funuciones con múltiples valores predeterminados con claves
+def saludar(nombre="mundo", saludo="Hola"):
+    print(f"{saludo}, {nombre}!")
+saludar()  # Imprime "Hola, mundo!"
+saludar("Alice")  # Imprime "Hola, Alice!"
+saludar(saludo="¡Bienvenido!", nombre="Bob")  # Imprime "¡Bienvenido!, Bob!"
