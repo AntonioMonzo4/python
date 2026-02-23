@@ -1,0 +1,19 @@
+#range() IMPORTANTE no es una función, 
+#es un tipo de dato que representa una secuencia de números enteros. 
+#Es comúnmente utilizado en bucles for para iterar sobre un rango de números.
+
+#Bucle for con range
+for numero in range(5):
+    print("Número:", numero)
+
+#Bucle for con range y un paso
+for numero in range(0, 10, 2):
+    print("Número par:", numero)
+
+#Bucle for con range y un paso negativo
+for numero in range(10, 0, -1):
+    print("Número:", numero)
+
+#Bucle for con range y un paso negativo para contar hacia atrás
+for numero in range(10, 0, -1):
+    print("Número:", numero)
