@@ -25,6 +25,9 @@ def multiplicar(a, b):
 #Llamar a la función multiplicar
 resultado = multiplicar(4, 6)
 print("El resultado de la multiplicación es:", resultado)  # Imprime "El resultado de la multiplicación es: 24"
+#help y __doc__ para acceder a la documentación de la función
+print(multiplicar.__doc__)  # Imprime "Esta función multiplica dos números y devuelve el resultado."
+help(multiplicar)  # Muestra la documentación de la función multiplicar     
 
 #Funciones con valores predeterminados
 def saludar(nombre="mundo"):
