@@ -15,3 +15,24 @@ print(mixta[1])    # Imprime 42
 frutas[1] = "pera"
 print(frutas)  # Imprime ["manzana", "pera", "naranja"]
 
+#Acceder al último elemento de una lista
+#Puedes usar índices negativos para acceder a los elementos desde el final de la lista. El índice -1 se refiere al último elemento, -2 al penúltimo, y así sucesivamente.
+print(frutas[-1])  # Imprime "naranja"
+
+#Añadir elementos a una lista
+frutas.append("uva")
+print(frutas)  # Imprime ["manzana", "pera", "naranja", "uva"]
+numeros.append(6)
+print(numeros)  # Imprime [1, 2, 3, 4, 5, 6]
+
+#Lista de listas
+#Puedes crear listas que contengan otras listas como elementos. Esto se conoce como listas anidadas.
+matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(matriz[0])  # Imprime [1, 2, 3]
+print(matriz[1][2])  # Imprime 6 (elemento en la segunda fila, tercera columna) 
+
+#Slicing de listas
+#Puedes obtener una sublista utilizando el slicing. La sintaxis es lista[inicio:fin :paso], donde inicio es el índice de inicio (inclusive), fin es el índice de fin (exclusive) y paso es el número de elementos a saltar.
+print(frutas[0:2])  # Imprime ["manzana", "pera"]
+print(numeros[1:5:2])  # Imprime [2, 4]
+
