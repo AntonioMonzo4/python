@@ -77,3 +77,34 @@ print(sum(numeros))  # Imprime 21
 print(max(numeros))  # Imprime 6
 #min(): Devuelve el valor mínimo de una lista (solo para listas numéricas).
 print(min(numeros))  # Imprime 1
+
+
+#Órdenes de listas
+#sorted(): Devuelve una nueva lista ordenada.
+numeros_ordenados = sorted(numeros)
+print(numeros_ordenados)  # Imprime [1, 2, 3, 4, 5, 6]
+#sort(): Ordena la lista en su lugar.
+numeros.sort()
+print(numeros)  # Imprime [1, 2, 3, 4, 5, 6]
+#reverse(): Invierte el orden de los elementos en la lista.
+numeros.reverse()
+print(numeros)  # Imprime [6, 5, 4, 3, 2, 1]
+#En cadenas de textos también se pueden ordenar alfabéticamente
+frutas.sort()
+print(frutas)  # Imprime ["manzana", "naranja", "uva"]
+#Pero con las mayúsculas primero
+frutas_mayusculas = ["Manzana", "Naranja", "Uva"]
+frutas_mayusculas.sort()
+print(frutas_mayusculas)  # Imprime ["Manzana", "Naranja", "Uva"] (mayúsculas antes que minúsculas)
+#Para ordenar sin importar mayúsculas o minúsculas, puedes usar el parámetro key con str.lower
+frutas.sort(key=str.lower)
+print(frutas)  # Imprime ["manzana", "naranja", "uva"] (ordenado sin importar mayúsculas)
+
+#Más funciones útiles para listas
+#count(): Devuelve el número de veces que un elemento aparece en la lista.
+print(frutas.count("manzana"))  # Imprime 1
+#index(): Devuelve el índice de la primera aparición de un elemento en la lista.
+print(frutas.index("naranja"))  # Imprime 1
+#in: Devuelve True si un elemento está presente en la lista, de lo contrario devuelve False.
+print("uva" in frutas)  # Imprime True
+print("pera" in frutas)  # Imprime False
