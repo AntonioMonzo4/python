@@ -62,4 +62,19 @@ nombres = ["Alice", "Bob", "Charlie"]
 edades = [25, 30, 35]
 for nombre, edad in zip(nombres, edades):
     print(f"Nombre: {nombre}, Edad: {edad}")    
-    
+
+
+#Compresión de listas con bucle for
+#Puedes crear una nueva lista a partir de una existente utilizando una comprensión de listas.
+#La sintaxis es [expresión for elemento in iterable if condición], donde expresión es el valor que se agregará a la nueva lista,
+#elemento es la variable que representa cada elemento del iterable, y condición es una expresión opcional que filtra los elementos.
+numeros = [1, 2, 3, 4, 5]
+cuadrados = [numero ** 2 for numero in numeros]
+print(cuadrados)  # Imprime [1, 4, 9, 16, 25]
+pares = [numero for numero in numeros if numero % 2 == 0]
+print(pares)  # Imprime [2, 4]
+
+#Con cadenas puedes usar la comprensión de listas para crear una nueva lista de caracteres a partir de una cadena.
+palabra = "Python"
+letras = [letra for letra in palabra]
+print(letras)  # Imprime ['P', 'y', 't', 'h', 'o', 'n']
