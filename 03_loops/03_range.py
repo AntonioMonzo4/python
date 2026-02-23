@@ -20,3 +20,8 @@ for numero in range(10, 0, -1):
 
 #Para crear una lista a partir de un rango de números, puedes convertir el objeto range en una lista utilizando la función list().
 numeros = list(range(5))
+
+#Hacer algo con los números del rango con _
+for _ in range(5):
+    print("Hola, mundo!")
+    
