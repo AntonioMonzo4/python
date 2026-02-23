@@ -48,6 +48,15 @@ frutas.pop()  # Elimina el último elemento ("kiwi")
 print(frutas)  # Imprime ["manzana", "naranja", "uva"]
 numeros.pop()  # Elimina el último elemento (6)
 
+#Eliminar todos los elementos de una lista
+frutas.clear()
+print(frutas)  # Imprime []
+
+#Eliminar un rango de elementos
+numeros[1:3] = []  # Elimina los elementos en los índices 1 y 2
+print(numeros)  # Imprime [2, 5, 6]
+
+
 #Lista de listas
 #Puedes crear listas que contengan otras listas como elementos. Esto se conoce como listas anidadas.
 matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
