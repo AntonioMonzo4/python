@@ -28,6 +28,14 @@ print(numeros)  # Imprime [1, 2, 3, 4, 5, 6]
 frutas = frutas + ["kiwi"]
 print(frutas)  # Imprime ["manzana", "pera", "naranja", "uva", "kiwi"]
 
+#Insertar elementos en una posición específica
+frutas.insert(1, "fresa")  # Inserta "fresa" en el índice 1
+print(frutas)  # Imprime ["manzana", "fresa", "pera", "naranja", "uva", "kiwi"]
+
+#Agregar elemento al final con extend
+frutas.extend(["melón", "sandía"])
+print(frutas)  # Imprime ["manzana", "fresa", "pera", "naranja", "uva", "kiwi", "melón", "sandía"]
+
 #Eliminar elementos de una lista
 #Puedes eliminar elementos de una lista utilizando el método remove() o la función del.
 frutas.remove("pera")
@@ -35,6 +43,10 @@ print(frutas)  # Imprime ["manzana", "naranja", "uva", "kiwi"]
 del numeros[0]  # Elimina el primer elemento (1)
 print(numeros)  # Imprime [2, 3, 4, 5, 6]
 
+#Eliminar el último elemento de una lista
+frutas.pop()  # Elimina el último elemento ("kiwi")
+print(frutas)  # Imprime ["manzana", "naranja", "uva"]
+numeros.pop()  # Elimina el último elemento (6)
 
 #Lista de listas
 #Puedes crear listas que contengan otras listas como elementos. Esto se conoce como listas anidadas.
