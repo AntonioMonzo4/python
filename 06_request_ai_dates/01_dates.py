@@ -26,6 +26,11 @@ print("Fecha hace 30 días:", fecha_pasada)  # Imprime la fecha que fue hace 30 
 #crear fecha y hora a partir de componentes individuales
 fecha_hora_componentes = datetime(2024, 8, 15, 14, 30, 0)
 print("Fecha y hora a partir de componentes:", fecha_hora_componentes)  # Imprime "Fecha y hora a partir de componentes: 2024-08-15 14:30:00"
+#Operaciones con fechas y horas
+fecha_hora_suma = fecha_hora_actual + timedelta(days=7, hours=2)
+print("Fecha y hora dentro de 7 días y 2 horas:", fecha_hora_suma)  # Imprime la fecha y hora que será dentro de 7 días y 2 horas
+fecha_hora_resta = fecha_hora_actual - timedelta(days=7, hours=2)
+print("Fecha y hora hace 7 días y 2 horas:", fecha_hora_resta   )  # Imprime la fecha y hora que fue hace 7 días y 2 horas  
 
 
 import re
