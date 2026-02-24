@@ -14,7 +14,8 @@ class Coche:
 
 #Crear una clase para llamar a la API de OpenAI, Deepseek o cualquier otra API de IA
 import requests
-
+OPEN_API_KEY = "TU_API KEY_AQUI"
+DEEPSEEK_API_KEY = "TU_API_KEY_AQUI"
 class APIClient:
     def __init__(self, api_key, base_url, model):
         self.api_key = api_key
@@ -35,6 +36,7 @@ class APIClient:
         response.raise_for_status()  # Verificar si la respuesta fue exitosa
         return response.json()
         
-open_ia = APIClient(OPENAI_API_KEY, "https://api.openai.com/v1/chat/completions", "gpt-4")
+
+open_ia = APIClient(OPEN_API_KEY, "https://api.openai.com/v1/chat/completions", "gpt-4")
 
 open_ia.ask("Describe este código en dos minutos")
