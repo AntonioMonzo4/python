@@ -23,6 +23,11 @@ print("Fecha dentro de 30 días:", fecha_futura)  # Imprime la fecha que será d
 fecha_pasada = fecha_actual - timedelta(days=30)
 print("Fecha hace 30 días:", fecha_pasada)  # Imprime la fecha que fue hace 30 días
 
+#crear fecha y hora a partir de componentes individuales
+fecha_hora_componentes = datetime(2024, 8, 15, 14, 30, 0)
+print("Fecha y hora a partir de componentes:", fecha_hora_componentes)  # Imprime "Fecha y hora a partir de componentes: 2024-08-15 14:30:00"
+
+
 import re
 #Ejemplo de uso de expresiones regulares para extraer fechas
 texto = "La reunión es el 15/08/2024 y la fecha límite para entregar el informe es el 30/09/2024."
