@@ -38,4 +38,6 @@
 #Esto creará un archivo llamado requirements.txt que contiene una lista de todas las dependencias de tu proyecto y sus versiones.
 #Para instalar las dependencias de tu proyecto desde un archivo de requisitos, puedes usar el siguiente comando:
 #pip install -r requirements.txt
+#pip list --> muestra una lista de todos los paquetes instalados en el entorno virtual junto con sus versiones.
+
 
