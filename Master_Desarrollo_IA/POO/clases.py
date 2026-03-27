@@ -6,7 +6,8 @@
 #1. Encapsulamiento: ocultar los detalles internos de una clase y exponer solo lo necesario a través de métodos públicos.
 #2. Abstracción: representar conceptos complejos de manera simplificada, enfocándose en los aspectos esenciales
 #3. Herencia: permite crear una nueva clase (clase hija) que hereda atributos y métodos de una clase existente (clase padre).
-#4. Polimorfismo: permite que diferentes clases puedan ser tratadas como instancias de una clase común, lo que facilita la reutilización de código y la flexibilidad en el diseño de programas.
+#4. Polimorfismo: permite que diferentes clases puedan ser tratadas como instancias de una clase común, 
+# lo que facilita la reutilización de código y la flexibilidad en el diseño de programas.
 
 
 class Libro:
