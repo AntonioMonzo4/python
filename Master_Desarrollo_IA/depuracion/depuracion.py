@@ -49,4 +49,3 @@ class TestSumar(unittest.TestCase):
         self.assertEqual(sumar(2, -3), -1) #Prueba correcta
 if __name__ == '__main__':
     unittest.main() #Ejecutar las pruebas unitarias
-    
