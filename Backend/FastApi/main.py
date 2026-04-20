@@ -3,8 +3,24 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/")# @app(decorador) sirve para un objeto web en este caso define la ruta del get  en este caso el localhost 
+
 async def root():
     return "Hello FastAPI"
 
 #Levantamos el servidor con el comando uvicorn main:app --reload
+
+#Otra operación 
+
+@app.get("/url")
+async def root():
+    return {"url_curso":"https://mouredev.com/python"}
+
+#Si no encuentra la dirección manda este mensaje en forma de JSON {"detail":"Not Found"}
+
+#Para que la documentación se haga automática tenemos que Swagger o Redocly  /docs /redoc
+
+
+#AMBAS SON DE TESTEO PARA PROBAR APIS
+#PostMan --> para interactuar con la Api 
+#Thunder Client --> desde VScode
