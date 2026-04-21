@@ -18,7 +18,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")#Para montar
 @app.get("/")# @app(decorador) sirve para un objeto web en este caso define la ruta del get  en este caso el localhost 
 
 async def root():
-    return "Hello FastAPI"
+    return "Hello FastAPI Prueba Final"
 
 #Levantamos el servidor con el comando uvicorn main:app --reload
 
