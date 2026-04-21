@@ -1,5 +1,5 @@
 from fastapi import FastAPI , HTTPException
-from pydatic import BaseModel #BaseModel es una clase que nos permite crear modelos de datos para validar la información que recibimos en las peticiones
+from pydantic import BaseModel #BaseModel es una clase que nos permite crear modelos de datos para validar la información que recibimos en las peticiones
 
 app = FastAPI()
 
@@ -13,9 +13,9 @@ class User(BaseModel):
     age: int
     username: str 
 
-users_list = [User(id :42, name="Antonio",age=26,username="antonio_dev"),
-            User(id:27, name="Tesla",age=100,username="tesla_dev"),
-            User(id:48,name="Einstein",age=150,username="einstein_dev")]#Para que no exista duda de como se crean los objetos 
+users_list = [User(id =42, name="Antonio",age=26,username="antonio_dev"),
+            User(id=27, name="Tesla",age=100,username="tesla_dev"),
+            User(id=48,name="Einstein",age=150,username="einstein_dev")]#Para que no exista duda de como se crean los objetos 
 
 
 
