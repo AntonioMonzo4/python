@@ -1,7 +1,13 @@
 #Previamente se ha instalado FastApi con el comando pip install "fastapi[all]"
 from fastapi import FastAPI
+from routers import products
 
 app = FastAPI()
+
+
+# Routers
+app.include_router(products.router)
+
 
 @app.get("/")# @app(decorador) sirve para un objeto web en este caso define la ruta del get  en este caso el localhost 
 
