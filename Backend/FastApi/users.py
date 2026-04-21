@@ -1,4 +1,4 @@
-from fastapi import FastAPI 
+from fastapi import FastAPI , HTTPException
 from pydatic import BaseModel #BaseModel es una clase que nos permite crear modelos de datos para validar la información que recibimos en las peticiones
 
 app = FastAPI()
@@ -51,10 +51,11 @@ def search_user(id: int):
 async def user():
     return users_list
 
-@app.post("/user/")
+@app.post("/user/",status_code=201)
 async def user(user: User):
     if type(search_user(user.id) )== User:
-        return {"error": "User already exists"}
+        raise HTTPException(status_code=400, detail="User already exits")
+        
     else:
         users_list.append(user)
 
