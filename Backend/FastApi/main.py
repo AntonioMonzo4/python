@@ -1,6 +1,6 @@
 #Previamente se ha instalado FastApi con el comando pip install "fastapi[all]"
 from fastapi import FastAPI
-from routers import products
+from routers import products, basic_auth_users, jwt_auth_users,users_db
 from fastapi.staticfiles import StaticFiles
 
 
@@ -10,6 +10,9 @@ app = FastAPI()
 
 # Routers
 app.include_router(products.router)
+app.include_router(products.router_jwt_auth_users)
+app.include_router(products.router_basic_auth_users)
+app.include_router(users_db.router) #Router para la base de datos de usuarios
 app.mount("/static", StaticFiles(directory="static"), name="static")#Para montar archivos estáticos como imágenes,
 #CSS o JavaScript en la ruta /static. El directorio "static" es donde se encuentran estos archivos en el proyecto. 
 # El nombre "static" es un alias para esta ruta, que se puede usar para referenciar los archivos estáticos en otras partes de la aplicación.
