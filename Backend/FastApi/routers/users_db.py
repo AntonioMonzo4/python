@@ -25,7 +25,7 @@ async def user(id: str):
 @router.get("/")  # Query
 async def user(id: str):
     return search_user("_id", ObjectId(id))
-
+   
 
 @router.post("/", response_model=User, status_code=status.HTTP_201_CREATED)
 async def user(user: User):
