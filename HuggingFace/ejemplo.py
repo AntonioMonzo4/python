@@ -17,3 +17,5 @@ completion = client.chat.completions.create(
 )
 
 print(completion.choices[0].message)
+
+#ESTA ES LA FORMA DE CONECTARSE VIA HUGGIBG FACE PERO ES NUY SIMILAR A OTROS
